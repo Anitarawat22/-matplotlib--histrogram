@@ -1,0 +1,32 @@
+
+1.importing the matplotlib and give alsices as mp
+import matplotlib as mp
+
+2.importing the pyplot from matplotlib and give alisces as plt
+from matplotlib import pyplot as plt
+
+---->ages = [18,19,21,25,26,30,32,35,40,45]
+plt.hist(ages, bins = 5,edgecolor = 'black')  ##when the bins are divided into 5 parts
+
+
+using bins:
+----->
+ages = [18,19,21,25,26,30,32,35,40,45]
+bins = [10,20,30,40,50]
+plt.hist(ages, bins = bins,edgecolor = 'black')
+
+
+using logthermic 
+---->
+ages = [18,19,21,25,26,30,32,35,40,45]
+bins = [10,20,30,40,50]
+plt.hist(ages, bins = bins,edgecolor = 'black',log = True)
+
+using vertical scale
+--->
+ages = [18,19,21,25,26,30,32,35,40,45]
+bins = [10,20,30,40,50]
+plt.hist(ages, bins = bins,edgecolor = 'black')
+median_ages = 29
+color = 'red'
+plt.axvline(median_ages,color = color, label = 'age median')
